@@ -1,0 +1,27 @@
+{
+    "name": "ip-block/symfony-bundle",
+    "description": "Symfony bundle that checks each request against the ip-block.com service and blocks disallowed clients.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["symfony", "bundle", "security", "ip", "firewall", "ip-block"],
+    "homepage": "https://www.ip-block.com",
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^6.4 || ^7.0",
+        "symfony/http-kernel": "^6.4 || ^7.0",
+        "symfony/http-client": "^6.4 || ^7.0",
+        "symfony/config": "^6.4 || ^7.0",
+        "symfony/dependency-injection": "^6.4 || ^7.0",
+        "psr/cache": "^2.0 || ^3.0",
+        "psr/log": "^1.0 || ^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "symfony/cache": "^6.4 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IpBlock\\SymfonyBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
